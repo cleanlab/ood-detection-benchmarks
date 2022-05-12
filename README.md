@@ -36,6 +36,8 @@ For each experiment, we perform the following procedure:
 
 ## Instructions
 
+TODO: add links to download datasets
+
 #### Prerequisite
 
 - [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-docker): allows us to properly utilize our NVIDIA GPUs inside docker environments
