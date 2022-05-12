@@ -8,7 +8,7 @@ class ApproxNearestNeighbors:
 
     Approximate nearest neighbor search is done with Annoy using binary trees. This is blazing fast.
 
-    See link below for details on the implementation:
+    Reference:
     https://erikbern.com/2015/10/01/nearest-neighbors-and-vector-models-part-2-how-to-search-in-high-dimensional-spaces.html
 
     Parameters
