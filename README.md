@@ -1,4 +1,4 @@
-# Out-of-distribution (OOD) Detection Benchmarks
+# Out-of-Distribution (OOD) Detection Benchmarks
 
 Out-of-distribution (OOD) detection is the task of determining whether a datapoint comes from a different distribution than the training dataset. For example, we may train a model to classify the breed of dogs and find that there is a cat image in our dataset. This cat image would be considered out-of-distribution.
 
