@@ -77,6 +77,19 @@ Run notebook below to run all experiments.
 
 [src/experiments/OOD/1_Evaluate_All_OOD_Experiments.ipynb]()
 
+We save the following Numpy files to separate folders for each experiment.
+
+Folder: `src/experiments/OOD/test_data_in_{in-distribution dataset}_out_{out-of-distribution dataset}`
+
+Replace `{in-distribution dataset}` and `{out-of-distribution dataset}` with the names of the datasets.
+
+Files:
+
+- `pred_probs.npy`: out-of-sample predicted probabilities (test dataset)
+- `ood_mask.npy`: boolean mask for whether a datapoint is OOD
+- `in_distribution_test_dataset_class_labels.npy`: original class labels for ONLY the in-distribution dataset
+- `emeddings.npy`: learned embeddings extracted from AutoGluon model
+
 ## Results
 
 Preparation of final results in progress
