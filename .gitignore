@@ -1,0 +1,21 @@
+*/__init__.py
+*__pycache__
+*/.ipynb*
+.ipynb_checkpoints
+*temp*.ipynb
+*.csv
+*.pickle
+*.trial*
+*split*
+data
+temp
+archive
+
+# AutoGluon models
+*.ag
+
+# embeddings
+*embeddings.npy
+
+# ONNX models
+*.onnx
