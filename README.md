@@ -22,8 +22,8 @@ For each experiment, we perform the following procedure:
 
 1. Train a Neural Network model with ONLY the **in-distribution** training dataset.
 2. Use this model to generate predicted probabilties and embeddings for the **in-distribution** and **out-of-distribution** test datasets (these are considered out-of-sample predictions).
-3. Use out-of-sample predictions to generate OOD scores
-4. Compute AUROC of OOD scores to detect OOD datapoints
+3. Use out-of-sample predictions to generate OOD scores.
+4. Compute AUROC of OOD scores to detect OOD datapoints.
 
 | Experiment ID | In-Distribution | Out-of-Distribution |
 | :------------ | :-------------- | :------------------ |
@@ -36,7 +36,7 @@ For each experiment, we perform the following procedure:
 
 ## Instructions
 
-#### 0. Prerequisite
+#### Prerequisite
 
 - [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-docker): allows us to properly utilize our NVIDIA GPUs inside docker environments
 
@@ -55,11 +55,21 @@ sudo docker-compose run --rm --service-port dcai
 make jupyter-lab
 ```
 
-#### 3. Train all models with a single notebook
+#### 3. Train models
+
+Run the command below to save a pretrained model (ResNet50 trained on ImageNet) in ONNX format. This pretrained model is used in our experiments to compare pre-trained embeddings versus learned embeddings.
+
+```bash
+python3 src/image_feature_extraction/convert_feature_extractor_to_onnx.py
+```
+
+Run notebook below to train all models.
 
 [src/experiments/OOD/0_Train_Models.ipynb]()
 
-#### 4. Run all experiments with a single notebook
+#### 4. Run experiments
+
+Run notebook below to run all experiments.
 
 [src/experiments/OOD/1_Evaluate_All_OOD_Experiments.ipynb]()
 
