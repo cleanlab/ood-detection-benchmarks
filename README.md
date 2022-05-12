@@ -51,13 +51,11 @@ sudo docker-compose run --rm --service-port dcai
 
 #### 2. Start Jupyter Lab
 
-Run command below.
+Run command below. Note that we use Makefile to run jupyter lab for convenience so we can save args (ip, port, allow-root, etc).
 
 ```bash
 make jupyter-lab
 ```
-
-Note that we use Makefile to run jupyter lab for convenience so we can save args (ip, port, allow-root, etc).
 
 #### 3. Train models
 
