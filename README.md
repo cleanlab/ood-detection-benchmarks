@@ -71,13 +71,13 @@ python3 src/image_feature_extraction/convert_feature_extractor_to_onnx.py
 
 Run notebook below to train all models.
 
-[src/experiments/OOD/0_Train_Models.ipynb]()
+[src/experiments/OOD/0_Train_Models.ipynb](https://github.com/JohnsonKuan/ood-detection-benchmarks/blob/main/src/experiments/OOD/0_Train_Models.ipynb)
 
 #### 4. Run experiments
 
 Run notebook below to run all experiments.
 
-[src/experiments/OOD/1_Evaluate_All_OOD_Experiments.ipynb]()
+[src/experiments/OOD/1_Evaluate_All_OOD_Experiments.ipynb](https://github.com/JohnsonKuan/ood-detection-benchmarks/blob/main/src/experiments/OOD/1_Evaluate_All_OOD_Experiments.ipynb)
 
 We save the following Numpy files to separate folders for each experiment.
 
