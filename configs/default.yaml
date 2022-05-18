@@ -1,9 +1,0 @@
-feature_extractor:
-  path_to_onnx: "./src/image_feature_extraction/models/feature_extractor.onnx"
-  batch_size: 32
-
-nearest_neighbor:
-  metric: "angular"
-  n_trees: 10
-  file_path: "./src/image_similarity_search/index.ann"
-  precompute_neighbors: 100
