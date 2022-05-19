@@ -79,15 +79,16 @@ make jupyter-lab
 
 #### 3. Train models
 
-Run the command below to save a pretrained model (ResNet50 trained on ImageNet) in ONNX format. This pretrained model is used in our experiments to compare pre-trained embeddings versus learned embeddings.
-
-```bash
-python3 src/image_feature_extraction/convert_feature_extractor_to_onnx.py
-```
-
 Run notebook below to train all models.
 
 [src/experiments/OOD/0_Train_Models.ipynb](https://github.com/JohnsonKuan/ood-detection-benchmarks/blob/main/src/experiments/OOD/0_Train_Models.ipynb)
+
+Note that we use 2 neural net architectures below with AutoGluon and each use different backend:
+
+- Swin swin_base_patch4_window7_224 (torch backend)
+- resnet50_v1 (mxnet backend)
+
+We use mxnet backend for resnet50 because there is a bug with the torch backend version.
 
 #### 4. Run experiments
 
