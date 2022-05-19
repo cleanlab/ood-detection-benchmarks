@@ -1,0 +1,5 @@
+mxnet-cu112
+autogluon
+annoy
+umap-learn
+seaborn
