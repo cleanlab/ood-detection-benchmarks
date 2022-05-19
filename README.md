@@ -40,17 +40,17 @@ For our experiments, we use [AutoGluon's ImagePredictor](https://auto.gluon.ai/d
 
 Links below to download the datasets in PNG format for AutoGluon:
 
-**cifar-10** and **cifar-100**
-https://github.com/knjcode/cifar2png
+- **cifar-10** and **cifar-100**
+  https://github.com/knjcode/cifar2png
 
-**roman-numeral**
-https://worksheets.codalab.org/bundles/0x497f5d7096724783aa1eb78b85aa321f
+- **roman-numeral**
+  https://worksheets.codalab.org/bundles/0x497f5d7096724783aa1eb78b85aa321f
 
-**mnist**
-https://github.com/myleott/mnist_png
+- **mnist**
+  https://github.com/myleott/mnist_png
 
-**fashion-mnist**
-https://github.com/DeepLenin/fashion-mnist_png
+- **fashion-mnist**
+  https://github.com/DeepLenin/fashion-mnist_png
 
 ## Instructions
 
