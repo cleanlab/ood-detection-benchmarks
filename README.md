@@ -34,9 +34,25 @@ For each experiment, we perform the following procedure:
 | 4             | mnist           | fashion-mnist       |
 | 5             | fashion-mnist   | mnist               |
 
-## Instructions
+## Download datasets
 
-TODO: add links to download datasets
+For our experiments, we use [AutoGluon's ImagePredictor](https://auto.gluon.ai/dev/tutorials/image_prediction/beginner.html) for image classification which requires the training, validation, and test datasets to be image files.
+
+Links below to download the datasets in PNG format for AutoGluon:
+
+**cifar-10** and **cifar-100**
+https://github.com/knjcode/cifar2png
+
+**roman-numeral**
+https://worksheets.codalab.org/bundles/0x497f5d7096724783aa1eb78b85aa321f
+
+**mnist**
+https://github.com/myleott/mnist_png
+
+**fashion-mnist**
+https://github.com/DeepLenin/fashion-mnist_png
+
+## Instructions
 
 #### Prerequisite
 
