@@ -38,7 +38,7 @@ For each experiment, we perform the following procedure:
 
 For our experiments, we use [AutoGluon's ImagePredictor](https://auto.gluon.ai/dev/tutorials/image_prediction/beginner.html) for image classification which requires the training, validation, and test datasets to be image files.
 
-Links below to download the datasets in PNG format for AutoGluon:
+Links below to download the training and test datasets in PNG format:
 
 - **cifar-10** and **cifar-100**:
   https://github.com/knjcode/cifar2png
