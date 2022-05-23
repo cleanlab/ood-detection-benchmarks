@@ -46,6 +46,8 @@ Links below to download the training and test datasets in PNG format:
 - **roman-numeral**:
   https://worksheets.codalab.org/bundles/0x497f5d7096724783aa1eb78b85aa321f
 
+  There are duplicate images in the dataset (exact same image with different file names). We use the following script to dedupe: `src/preprocess/remove_dupes.py`
+
 - **mnist**:
   https://github.com/myleott/mnist_png
 
