@@ -88,14 +88,10 @@ Note that we use 2 neural net architectures below with AutoGluon and each use di
 - swin_base_patch4_window7_224 (torch backend)
 - resnet50_v1 (mxnet backend)
 
-We use mxnet backend for resnet50 because there is a bug with the torch backend version.
+We use mxnet backend for resnet50 because there is a bug with the torch backend version when extracting embeddings.
 
 #### 4. Run experiments
 
 Run notebook below to run all experiments.
 
 [src/experiments/OOD/1_Evaluate_All_OOD_Experiments.ipynb](https://github.com/JohnsonKuan/ood-detection-benchmarks/blob/main/src/experiments/OOD/1_Evaluate_All_OOD_Experiments.ipynb)
-
-## Results
-
-Preparation of final results in progress
