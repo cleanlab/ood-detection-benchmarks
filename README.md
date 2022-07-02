@@ -1,20 +1,13 @@
 # Out-of-Distribution (OOD) Detection Benchmarks
 
-Out-of-distribution (OOD) detection is the task of determining whether a datapoint comes from a different distribution than the training dataset. For example, we may train a model to classify the breed of dogs and find that there is a cat image in our dataset. This cat image would be considered out-of-distribution.
+Code to reproduce results from the paper:
 
-OOD detection is useful to find label issues where the actual ground truth label is not in the set of labels for our task (e.g. cat label for a dog breed classification task). This can serve many use-cases, some of which include:
+**Back to the Basics: Revisiting Out-of-Distribution Detection Baselines**. *ICML 2022 Workshop on Principles of Distribution Shift*
 
-- Remove OOD datapoints from our dataset as part of a data cleaning pipeline
-- Consider adding new classes to our task
-- Gain deeper insight into the data distribution
 
+Out-of-distribution (OOD) detection is the task of determining whether a datapoint comes from a different distribution than the training dataset. For example, we may train a model to classify the breed of dogs and find that there is a cat image in our dataset. This cat image would be considered out-of-distribution. 
 This work evaluates the effectiveness of various scores to detect OOD datapoints.
 
-We also present a novel OOD score using the average entropy of K-nearest neighbors.
-
-## Methodology
-
-We treat OOD detection as a binary classification task (True or False: is the datapoint out-of-distribution?) and evaluate the performance of various OOD scores using AUROC.
 
 ## Experiments
 
@@ -23,7 +16,7 @@ For each experiment, we perform the following procedure:
 1. Train a Neural Network model with ONLY the **in-distribution** training dataset.
 2. Use this model to generate predicted probabilties and embeddings for the **in-distribution** and **out-of-distribution** test datasets (these are considered out-of-sample predictions).
 3. Use out-of-sample predictions to generate OOD scores.
-4. Compute AUROC of OOD scores to detect OOD datapoints.
+4. Threshold OOD scores to detect OOD datapoints.
 
 | Experiment ID | In-Distribution | Out-of-Distribution |
 | :------------ | :-------------- | :------------------ |
@@ -33,6 +26,7 @@ For each experiment, we perform the following procedure:
 | 3             | roman-numeral   | mnist               |
 | 4             | mnist           | fashion-mnist       |
 | 5             | fashion-mnist   | mnist               |
+
 
 ## Download datasets
 
@@ -54,11 +48,13 @@ Links below to download the training and test datasets in PNG format:
 - **fashion-mnist**:
   https://github.com/DeepLenin/fashion-mnist_png
 
-## Instructions
+
+## Instructions to reproduce results
 
 #### Prerequisite
 
 - [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-docker): allows us to properly utilize our NVIDIA GPUs inside docker environments
+
 
 #### 1. Run docker-compose to build the docker image and run the container
 
@@ -69,6 +65,7 @@ sudo docker-compose build
 sudo docker-compose run --rm --service-port dcai
 ```
 
+
 #### 2. Start Jupyter Lab
 
 Run command below.
@@ -78,6 +75,7 @@ Note that we use a Makefile to run jupyter lab for convenience so we can save ar
 ```bash
 make jupyter-lab
 ```
+
 
 #### 3. Train models
 
@@ -90,10 +88,9 @@ Note that we use 2 neural net architectures below with AutoGluon and each use di
 - swin_base_patch4_window7_224 (torch backend)
 - resnet50_v1 (mxnet backend)
 
-We use mxnet backend for resnet50 because there is a bug with the torch backend version when extracting embeddings.
 
 #### 4. Run experiments
 
-Run notebook below to run all experiments.
+Here is a notebook that runs all experiments:
 
 [src/experiments/OOD/1_Evaluate_All_OOD_Experiments.ipynb](https://github.com/JohnsonKuan/ood-detection-benchmarks/blob/main/src/experiments/OOD/1_Evaluate_All_OOD_Experiments.ipynb)
