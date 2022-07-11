@@ -2,7 +2,7 @@
 
 Code to reproduce results from the paper:
 
-**Back to the Basics: Revisiting Out-of-Distribution Detection Baselines**. *ICML 2022 Workshop on Principles of Distribution Shift*
+[**Back to the Basics: Revisiting Out-of-Distribution Detection Baselines**](https://arxiv.org/abs/2207.03061). [*ICML 2022 Workshop on Principles of Distribution Shift*](https://icml.cc/Conferences/2022/ScheduleMultitrack?event=20541)
 
 
 Out-of-distribution (OOD) detection is the task of determining whether a datapoint comes from a different distribution than the training dataset. For example, we may train a model to classify the breed of dogs and find that there is a cat image in our dataset. This cat image would be considered out-of-distribution. 
