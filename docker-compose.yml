@@ -19,6 +19,3 @@ services:
             - "8888:8888"
         volumes:
             - .:/dcai
-
-            # TODO: remove below before publishing repo
-            - /home/johnson/Data:/Data # data on M.2 SSD; super fast read for training workloads
