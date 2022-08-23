@@ -54,6 +54,7 @@ Links below to download the training and test datasets in PNG format:
 #### Prerequisite
 
 - [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-docker): allows us to properly utilize our NVIDIA GPUs inside docker environments
+- [autogluon](https://auto.gluon.ai/stable/index.html)==0.4.0
 
 
 #### 1. Run docker-compose to build the docker image and run the container
