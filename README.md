@@ -27,6 +27,10 @@ For each experiment, we perform the following procedure:
 | 4             | mnist           | fashion-mnist       |
 | 5             | fashion-mnist   | mnist               |
 
+## File Structure
+This repository is broken into two main folders:
+1. `OOD`: code to measure feature and base prediction probability out-of-distribution methods
+2. `adjusted-OOD-scores`: code to compare performance of adjusted and base prediction probability out-of-distribution methods.
 
 ## Download datasets
 
