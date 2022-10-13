@@ -4,9 +4,21 @@ Code to reproduce results from the paper:
 
 [**Back to the Basics: Revisiting Out-of-Distribution Detection Baselines**](https://arxiv.org/abs/2207.03061). [*ICML 2022 Workshop on Principles of Distribution Shift*](https://icml.cc/Conferences/2022/ScheduleMultitrack?event=20541)
 
-
 Out-of-distribution (OOD) detection is the task of determining whether a datapoint comes from a different distribution than the training dataset. For example, we may train a model to classify the breed of dogs and find that there is a cat image in our dataset. This cat image would be considered out-of-distribution. 
 This work evaluates the effectiveness of various scores to detect OOD datapoints.
+
+This repository is only for intended for scientific purposes. To detect outliers in your own data, you should instead use the [implementation](https://docs.cleanlab.ai/stable/tutorials/outliers.html) from the official [cleanlab](https://github.com/cleanlab/cleanlab) library.
+
+## File Structure
+This repository is broken into two main folders:
+
+1. `OOD/`: primary benchmarking code used for the paper linked above.
+
+2. `adjusted-OOD-scores/`: additional benchmarking code to produce results from the article:
+
+[A Simple Adjustment Improves Out-of-Distribution Detection for Any Classifier](https://pub.towardsai.net/a-simple-adjustment-improves-out-of-distribution-detection-for-any-classifier-5e96bbb2d627). *Towards AI*, 2022.
+
+This additional code considers OOD detection based solely on classifier predictions and adjusted versions thereof. 
 
 
 ## Experiments
@@ -27,10 +39,7 @@ For each experiment, we perform the following procedure:
 | 4             | mnist           | fashion-mnist       |
 | 5             | fashion-mnist   | mnist               |
 
-## File Structure
-This repository is broken into two main folders:
-1. `OOD`: code to measure feature and base prediction probability out-of-distribution methods
-2. `adjusted-OOD-scores`: code to compare performance of adjusted and base prediction probability out-of-distribution methods.
+
 
 ## Download datasets
 
