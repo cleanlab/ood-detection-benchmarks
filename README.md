@@ -10,7 +10,7 @@ This work evaluates the effectiveness of various scores to detect OOD datapoints
 This repository is only for intended for scientific purposes. To detect outliers in your own data, you should instead use the [implementation](https://docs.cleanlab.ai/stable/tutorials/outliers.html) from the official [cleanlab](https://github.com/cleanlab/cleanlab) library.
 
 ## File Structure
-This repository is broken into two main folders:
+This repository is broken into two major folders (inside `src/experiments/`):
 
 1. `OOD/`: primary benchmarking code used for the paper linked above.
 
