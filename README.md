@@ -16,7 +16,7 @@ This repository is broken into two major folders (inside `src/experiments/`):
 
 2. `adjusted-OOD-scores/`: additional benchmarking code to produce results from the article:
 
-[A Simple Adjustment Improves Out-of-Distribution Detection for Any Classifier](https://pub.towardsai.net/a-simple-adjustment-improves-out-of-distribution-detection-for-any-classifier-5e96bbb2d627). *Towards AI*, 2022.
+[**A Simple Adjustment Improves Out-of-Distribution Detection for Any Classifier**](https://pub.towardsai.net/a-simple-adjustment-improves-out-of-distribution-detection-for-any-classifier-5e96bbb2d627). *Towards AI*, 2022.
 
 This additional code considers OOD detection based solely on classifier predictions and adjusted versions thereof. 
 
